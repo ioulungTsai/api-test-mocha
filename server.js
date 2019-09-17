@@ -24,7 +24,7 @@ router.post('/add',function(req,res){
 router.post('/login',function(req,res){
   const { email, password } = req.body
   // Regular expression pattern for string at least 8 characters long, 1 upper case, 1 number
-  const regExp = /^(?=.*[A-Z])(?=.*[A-Z])(?=.{8,})/
+  const regExp = /^(?=.*[A-Z])(?=.*[0-9])(?=.{8,})/
   if(password.match(regExp)){
     res.json({
       "error" : false,
