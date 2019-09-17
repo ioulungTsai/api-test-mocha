@@ -20,6 +20,23 @@ router.post('/add',function(req,res){
   });
 });
 
+// Create login route api
+router.post('/login',function(req,res){
+  const { email, password } = req.body
+  // Regular expression pattern for string at least 8 characters long, 1 upper case, 1 number
+  const regExp = /^(?=.*[A-Z])(?=.*[A-Z])(?=.{8,})/
+  if(password.match(regExp)){
+    res.json({
+      "error" : false,
+      "message" : "success",
+      "email" : email,
+      "password" : password
+    });
+  } else {
+    res.send("Password not strong enough!")
+  }
+});
+
 app.use('/',router);
 
 app.listen(8080,function(){
