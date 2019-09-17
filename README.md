@@ -8,15 +8,15 @@
 
 ### Test Result
 - ```mocha```
-![Image of mocha](https://github.com/ioulungTsai/api-test-mocha/images/mocha.png)
+![Image of mocha](https://github.com/ioulungTsai/api-test-mocha/blob/master/images/mocha.png)
 - ```newman run test/api-test-mocha.postman_collection.json```
-![Image of newman](https://github.com/ioulungTsai/api-test-mocha/images/newman.png)
+![Image of newman](https://github.com/ioulungTsai/api-test-mocha/blob/master/images/newman.png)
 - ```sh test/curl/post.sh```
-![Image of curl](https://github.com/ioulungTsai/api-test-mocha/images/curl.png)
+![Image of curl](https://github.com/ioulungTsai/api-test-mocha/blob/master/images/curl.png)
 
 ### What can learn form this repo
 1. Run unit test & api supertest using **mocha** with **Should.js** & **supertest.js**.
-2. **Password authentication** pattern using **regular expressions** (RegEx).
+2. **Password authentication** pattern using **regular expressions (RegEx)**.
 3. Create **Postman Collections** to **organize individual requests** and **build integration test suites**.
 4. Using **Newman** run and test a **Postman collection** directly from the command-line.
 5. Execute **curl test scripts** in **filename.sh** file by command **sh /dir/filename.sh**.
