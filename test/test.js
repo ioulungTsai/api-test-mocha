@@ -1,8 +1,8 @@
 const supertest = require("supertest");
 const assert = require("assert");
 const should = require("should");
-const app = require('../../server');
-const ifPass = require('../../helpers/ifPass');
+const app = require('../server');
+const ifPass = require('../helpers/ifPass');
 
 // This agent refers to PORT where program is runninng.
 // const server = supertest.agent("http://localhost:8080");

@@ -28,7 +28,7 @@ router.post('/login',function(req,res){
 app.use('/',router);
 
 app.listen(8080,function(){
-  console.log("I am listening at PORT 8080");
+  console.log("I am listening at PORT 8080\n");
 })
 
 module.exports = app;
