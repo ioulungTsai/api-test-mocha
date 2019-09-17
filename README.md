@@ -17,7 +17,7 @@
 1. Run unit test & api supertest using **mocha** with **Should.js** & **supertest.js**.
 2. **Password authentication** pattern using **regular expressions (RegEx)**.
 3. Create **Postman Collections** to **organize individual requests** and **build integration test suites**.
-**Intro and one request of api-test-mocha.postman_collection.json**
+- **Info and one request of collections in JSON file of Postman Collections**
 ![Image of collections](https://github.com/ioulungTsai/api-test-mocha/blob/master/images/collections.png)
 4. Using **Newman** run and test a **Postman collection** directly from the command-line.
 5. Execute **curl test scripts** in **filename.sh** file by command **sh /dir/filename.sh**.
