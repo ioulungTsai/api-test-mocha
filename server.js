@@ -5,12 +5,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 const router = express.Router();
 
+const ifPass = require("./helpers/ifPass");
+
 // Create login route api
 router.post('/login',function(req,res){
   const { email, password } = req.body
-  // Regular expression pattern for string at least 8 characters long, 1 upper case, 1 number
-  const regExp = /^(?=.*[A-Z])(?=.*[0-9])(?=.{8,})/
-  if(password.match(regExp)){
+  if (ifPass(password)) {
     res.json({
       "error" : false,
       "message" : "success",
@@ -19,7 +19,7 @@ router.post('/login',function(req,res){
     });
   } else {
     res.json({
-      "message" : "Password not strong enough!"
+      "message" : "Password requirements: at least 8 characters, a uppercase letter, a number"
     })
   }
 });
