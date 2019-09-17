@@ -8,33 +8,17 @@ const ifPass = require('../helpers/ifPass');
 // const server = supertest.agent("http://localhost:8080");
 
 // UNIT test begin
+describe("ifPass test",function(){
+  it('should be all good', function() {
+    assert.equal(ifPass("Brandon666"), true)
+    assert.equal(ifPass("brAndOn666"), true)
+    assert.equal(ifPass("Br4ndon"), false)
+    assert.equal(ifPass("brandon666"), false)
+    assert.equal(ifPass("BrandonOHYA"), false)
+  });
+});
+
 describe("POST login",function(){
-
-  it('should be true', function() {
-    const result = ifPass("Brandon666")
-    assert.equal(result, true)
-  });
-
-  it('should be true', function() {
-    const result = ifPass("brAndOn666")
-    assert.equal(result, true)
-  });
-
-  it('should be false', function() {
-    const result = ifPass("Br4ndon")
-    assert.equal(result, false)
-  });
-
-  it('should be false', function() {
-    const result = ifPass("brandon666")
-    assert.equal(result, false)
-  });
-
-  it('should be false', function() {
-    const result = ifPass("BrandonOHYA")
-    assert.equal(result, false)
-  });
-
   it('should pass supertest', function(done) {
     supertest(app)
     .post('/login')
