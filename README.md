@@ -1,11 +1,13 @@
 # api-test-mocha-postman-curl
 
-### Get started
+ **Software QA skills practice**
+
+# Get started
 - Step1 : Clone or Download this repo
 - Step2 : ```npm install```
 - Step3 : ```npm run test```
 
-### Test Result
+# Test Result
 - **mocha**
 ![Image of mocha](https://github.com/ioulungTsai/api-test-mocha/blob/master/images/mocha.png)
 - **Newman**
@@ -13,7 +15,7 @@
 - **curl**
 ![Image of curl](https://github.com/ioulungTsai/api-test-mocha/blob/master/images/curl.png)
 
-### What can learn form this repo
+# What can learn form this repo
 1. Run **unit test** & **api supertest** using **mocha** with **Should.js** & **supertest.js**.
 2. **Password authentication** pattern using **regular expressions (RegEx)**.
 3. Create **Postman Collections** to **organize individual requests** and **build integration test suites**.
@@ -22,7 +24,7 @@
 4. Using **Newman** run and test a **Postman collection** directly from the command-line.
 5. Execute **curl test scripts** in **filename.sh** file by command **sh /dir/filename.sh**.
 
-### References
+# References
 - [How to Test Nodejs Code and RESTful API](https://codeforgeek.com/unit-testing-nodejs-application-using-mocha/?fbclid=IwAR2cgqTrEp-gzkq58RNZgHU49eQJbP3alG79e5U-J8iPV_bQWbkE4BCVm6c)
 - [Mocha](https://mochajs.org/)
 - [Should.js](https://shouldjs.github.io/)
