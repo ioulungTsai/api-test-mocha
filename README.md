@@ -1,4 +1,4 @@
-# api-test-mocha
+# api-test-mocha-postman-curl
 
 ### Get started
 - Step1 : Clone or Download this repo
