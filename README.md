@@ -9,7 +9,8 @@
 ### Test Result
 - ```mocha```
 ![Image of mocha](https://github.com/ioulungTsai/api-test-mocha/blob/master/images/mocha.png)
-- ```newman run test/api-test-mocha.postman_collection.json```
+- ```npm start```
+- ```newman run test/newman/api-test-mocha.postman_collection.json```
 ![Image of newman](https://github.com/ioulungTsai/api-test-mocha/blob/master/images/newman.png)
 - ```sh test/curl/post.sh```
 ![Image of curl](https://github.com/ioulungTsai/api-test-mocha/blob/master/images/curl.png)
