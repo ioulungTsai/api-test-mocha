@@ -14,7 +14,7 @@
 ![Image of curl](https://github.com/ioulungTsai/api-test-mocha/blob/master/images/curl.png)
 
 ### What can learn form this repo
-1. Run unit test & api supertest using **mocha** with **Should.js** & **supertest.js**.
+1. Run **unit test** & **api supertest** using **mocha** with **Should.js** & **supertest.js**.
 2. **Password authentication** pattern using **regular expressions (RegEx)**.
 3. Create **Postman Collections** to **organize individual requests** and **build integration test suites**.
 - **Info and one request of collections in JSON file of Postman Collections**
