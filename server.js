@@ -29,3 +29,5 @@ app.use('/',router);
 app.listen(8080,function(){
   console.log("I am listening at PORT 8080");
 })
+
+module.exports = app;
