@@ -20,17 +20,17 @@ describe("POST login",function(){
     assert.equal(result, true)
   });
 
-  it('should be true', function() {
+  it('should be false', function() {
     const result = ifPass("Br4ndon")
     assert.equal(result, false)
   });
 
-  it('should be true', function() {
+  it('should be false', function() {
     const result = ifPass("brandon666")
     assert.equal(result, false)
   });
 
-  it('should be true', function() {
+  it('should be false', function() {
     const result = ifPass("BrandonOHYA")
     assert.equal(result, false)
   });
